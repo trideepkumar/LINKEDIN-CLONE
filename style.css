@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+
+    background: rgb(235, 235, 235);
+}
+
+nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    padding: 0.3rem 4rem;
+    background: #fff;
+}
+nav .wrapper .left,
+nav .wrapper .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .wrapper .left{
+    padding-left: 3rem;
+    display: flex;
+    gap: 0.7rem;
+
+}
+
+nav .wrapper .logo i{
+    font-size: 2.5rem;
+    color: #0a66c2;
+    cursor: pointer;
+
+}
+
+nav .wrapper .left .input{
+    background: rgb(237, 245,246);
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+nav .wrapper .left .input input[type='search']{
+    width:15rem;
+    border: none;
+    background: transparent;
+} 
+nav .wrapper .left .input input[type='search'] ::placeholder{
+    font-size: 0.8rem;
+    color: rgb(49, 49, 49);
+    font-weight: 100;
+}
+
+nav .wrapper .left .input i{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+nav .wrapper .right .home,
+nav .wrapper .right .network,
+nav .wrapper .right .jobs,
+nav .wrapper .right .message,
+nav .wrapper .right .notification,
+nav .wrapper .right .me,
+nav .wrapper .right .work
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    gap: 0.5rem;
+    color: gray;
+    cursor: pointer;
+}
+
+nav .wrapper .right .home,
+nav .wrapper .right .network:hover,
+nav .wrapper .right .jobs:hover,
+nav .wrapper .right .message:hover,
+nav .wrapper .right .notification:hover,
+nav .wrapper .right .me .down:hover,
+nav .wrapper .right .work .down:hover
+{
+    color: black;
+}
+
+nav .wrapper .right .home i,
+nav .wrapper .right .network i,
+nav .wrapper .right .jobs i,
+nav .wrapper .right .message i,
+nav .wrapper .right .notification i{
+    font-size: 1.2rem;
+color: gray;
+}
+nav .wrapper .right .home i,
+nav .wrapper .right .network i:hover,
+nav .wrapper .right .jobs i:hover,
+nav .wrapper .right .message i:hover,
+nav .wrapper .right .notification i:hover,
+nav .wrapper .right .me i:hover,
+nav .wrapper .right .work i:hover{
+    
+color: #000;
+}
+nav .wrapper .right .me .down,
+nav .wrapper .right .work .down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: gray;
+}
+nav .wrapper .right .me  i:first-child{
+    color: #fff;
+    background:gray;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper a{
+    
+    font-size: 0.8rem;
+    width: 7rem;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(155, 88, 43);
+
+}
+.wrapper a:hover{
+    color: gray;
+}
+
+
+
+
+.container{
+    display:grid;
+    grid-template-columns: 20% 52% 20%;
+    gap:2rem;
+    width: 85%;
+    margin: 1.8rem auto;
+    
+}
+aside .sidebar{
+    background-color: #fff;
+    width: 100%;
+    height: 42vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.sidebar .top{
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(82, 92,105);
+    position:absolute;
+
+}
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top:3%;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid #fff;
+
+}
+aside .sidebar .profile{
+    position: relative;
+    text-align: center;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    border-bottom: 1px solid rgb(185,185,185);
+    height: 10vh;
+}
+.sidebar .profile h3:hover{
+    text-decoration: underline;
+}
+.sidebar .profile small{
+    font-size: 0.7rem;
+    color: gray;
+
+}
+
+.sidebar .view{
+    position:relative;
+    display: flex;
+    flex-direction:column;
+    top: 5%;
+    border-bottom: 1px solid rgb(167, 167, 167);
+
+}
+.sidebar .view .views{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 0.2rem 0.5rem;
+    cursor:pointer;
+    font-weight:100;
+    
+}
+.sidebar .view .views:hover{
+    background-color: rgb(205, 201, 201);
+}
+.sidebar .view .views h6{
+    color: gray;
+    font-weight: 100;
+}
+.sidebar .view .views a{
+    color: rgb(39, 39, 219);
+    text-decoration: none;
+    font-size: 0.8rem;
+
+}
+.sidebar .premium{
+    position: relative;
+    top:7%;
+}
+.sidebar .premium h6{
+    color:gray;
+    font-weight: 100;
+    margin-left: 0.2rem ;
+}
+.sidebar .premium a{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: #000;
+}
+.sidebar .premium a i{
+    color: rgb(236, 186, 50);
+}
+hr#premium{
+    margin: 0.5rem  0;
+    color: rgb(208, 208, 208);
+}
+.items{
+    position: relative;
+    top: 7%;
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    color: gray;
+    cursor: pointer;
+
+}
+.discover-more{
+    top:2%;
+    background-color: #fff;
+    width: 100%;
+    height: 22vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.discover-more .more{
+    position: relative;
+    display:flex;
+    margin-bottom: 1.2rem;
+    color: rgb(33, 81, 255);
+    top: 7%;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+#discover-more{
+    
+    margin: 0.5rem  0;
+    color: rgb(208, 208, 208);
+}
+.discover{
+     align-items: center;
+     margin-left: 3.5rem;
+     color: gray;
+    font-size: 100;
+     font-weight: 5rem;
+}
+.discover:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+main{
+    background-color: #fff;
+    border-radius: 0.8rem;
+    height: 17vh;
+    width: 85vh;
+}
+main .main-top .main-section{
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    gap:1rem;
+    height: 3rem;
+}
+main .main-top {
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    gap:1rem;
+    height: 3rem;
+}
+main .main-top img{
+    border-radius: 50%;
+}
+main .main-top input{
+    width: 33rem;
+    border-radius:25px ;
+    border-width: .01rem;
+    border-color: gray;
+    background-color:rgb(243, 243, 243);
+    padding-left:1.3rem;
+}
+.main-post{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.2rem;
+    
+}
+.main-post .post{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+main .main_section-2{
+    height:72vh;
+    background-color:#ffff;
+    margin-top: 2.5rem;
+    border-radius: 12px;
+    object-fit: contain;
+    
+    
+}
+.main_section-2 .center-top{
+    display: flex;
+    height: 10vh;
+    width: 20rem;
+}
+.main_section-2 .center-top img{
+    border-radius: 50%;
+}
+.main_section-2 .center-top h3{
+    font-size: 1rem;
+    margin-top: 1.1rem;
+    font-weight: 0.2rem;
+    
+}
+.center-top-1 p{
+    font-size: .8rem;
+    margin-left: 1rem;
+}
+.image{
+    width:100%;
+    margin-top: 1.5rem;
+}
+  
+    
+.hori{
+    margin-top: .5rem;
+    width:35rem;
+    margin-left: 2.7rem;
+    color:gray;
+}
+.right_side{
+    background-color:#ffff;
+    border-radius: 0.8rem;
+    height: 43vh;
+    width: 15rem;
+    margin-left:4rem;
+}
+
+
+
+h2{
+    color:rgb(0, 0, 0);
+    margin-left: 0.8rem;
+    margin-top: 0.4rem;
+    font-weight: 0.5rem;
+    font-size: 1.2rem;
+}
+.list ul{
+    font-size: small;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.list li p {
+    font-size: 0.5rem;
+}
+.right-head-bottom{
+    color: gray;
+    height: 43vh;
+    margin-top: 5rem;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.right-head-bottom h4{
+    align-items: center;
+}
